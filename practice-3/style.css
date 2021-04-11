@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 50px;
+}
+
+.table {
+    border: 1px solid #362f4b;
+    border-radius: 10px;
+}
+
+.table__header {
+    background: #362f4b;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.table__cell {
+    padding: 10px;
+    text-align: center;
+}
+
+.table__row:nth-child(even) {
+    background: #c7bfe0;
+}
+
+.table__row:nth-child(odd) {
+    background: #ffffff;
+}
+
+.search {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #362f4b;
+    outline: none;
+    border-radius: 10px;
+}
+
+.search:focus {
+    box-shadow: 0 0 5px 0 #362f4b;
+}

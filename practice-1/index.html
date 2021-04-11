@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+
+<body>
+    <button class="open-modal-btn">open modal</button>
+    <div class="modal">
+        <form class="form">
+            <h1 class="form__title">Стать партнёром проекта</h1>
+            <div class="form__container">
+                <div class="form__logo">
+                    <label for="logo" class="form__label form__label-logo">Логотип (jpeg, png)</label>
+                    <div class="form__logo-container">
+                        <button type="button" class="form__logo-btn-close"></button>
+                        <button type="button" class="form__logo-btn-add-file">Выберите файл</button>
+                    </div>
+                    <input type="file" class="form__input-file" id="logo" placeholder="АВЦ" required>
+                </div>
+                <div class="form__group form__organization">
+                    <label for="organization" class="form__label form__label-organization">Название организации</label>
+                    <input type="text" class="form__input" placeholder="АВЦ" id="organization" required>
+                </div>
+                <div class="form__group form__tel">
+                    <label for="tel" class="form__label form__label-tel">Телефон</label>
+                    <input type="tel" class="form__input" placeholder="+7 933 848-34-33" id="tel"
+                        pattern="\+7\s[0-9]{3}\s[0-9]{3}[-][0-9]{2}[-][0-9]{2}"
+                        title='Phone Number (Format: +7 933 848-34-33)' required>
+                </div>
+                <div class="form__group form__mail">
+                    <label for="mail" class="form__label form__label-mail">E-mail</label>
+                    <input type="email" class="form__input" placeholder="avc@gmail.com" id="mail" required>
+                </div>
+                <div class="form__group form__direction">
+                    <label for="direction" class="form__label form__label-direction">Направление</label>
+                    <select type="text" class="form__select" id="direction" required>
+                        <option value="Экология">Экология</option>
+                    </select>
+                </div>
+                <div class="form__group form__site">
+                    <input type="text" class="form__input form__input-site" placeholder="avc.ru">
+                </div>
+                <div class="form__group form__vk">
+                    <input type="text" class="form__input form__input-vk" placeholder="vk.com/shans">
+                </div>
+                <div class="form__group form__ok">
+                    <input type="text" class="form__input form__input-ok" placeholder="ok.com/shans">
+                </div>
+                <div class="form__group form__fb">
+                    <input type="text" class="form__input form__input-fb" placeholder="facebook.com/shans">
+                </div>
+                <div class="form__group form__inst">
+                    <input type="text" class="form__input form__input-inst" placeholder="instagram.com/shans">
+                </div>
+                <div class="form__group form__yt">
+                    <input type="text" class="form__input form__input-yt" placeholder="youtube.com/shans">
+                </div>
+                <div class="form__group form__director">
+                    <label for="director" class="form__label">Руководитель</label>
+                    <input type="text" class="form__input" placeholder="Александров Иван Васильевич" id="director">
+                </div>
+                <button type="submit" class="form__btn form__btn-submit">Стать партнёром проекта</button>
+                <button type="button" class="form__btn form__btn-cancel">Отменить</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
